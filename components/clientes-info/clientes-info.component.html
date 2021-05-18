@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="container2">
+        <ion-icon name="arrow-back-outline" (click)="volverAtras()"></ion-icon>
+         Página de {{cliente}}
+
+        <ion-icon name="home-outline" (click)="home()"></ion-icon>
+
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{cliente}}
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

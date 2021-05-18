@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <div class="container">
+      <ion-icon name="arrow-back-outline" (click)="volverAtras()"></ion-icon>
+      Página de Clientes
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let cliente of clientes; let i = index">
+    <ion-card-header>
+      <ion-card-title>
+        <ion-icon name="accessibility-outline"></ion-icon>
+        Cliente {{i+1}}
+        <ion-button color="warning" name="editar" size="small" (click)="editar(cliente)"> 
+          <ion-icon name="create-outline"></ion-icon>
+        </ion-button>
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
